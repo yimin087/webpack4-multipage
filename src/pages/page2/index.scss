@@ -1,0 +1,10 @@
+@import 'common/style/normalize.scss';
+body {
+  background: green;
+  font-size: 75px;
+  .page2 {
+    width: 750px;
+    height: 750px;
+    background: red;
+  }
+}
