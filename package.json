@@ -1,5 +1,5 @@
 {
-  "name": "webpack4",
+  "name": "activity-mobile",
   "version": "1.0.0",
   "sideEffects": [
     "*.scss",
@@ -8,11 +8,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config ./build/webpack.dev.js",
-    "build": "webpack --config ./build/webpack.prod.js",
+    "dev": "webpack-dev-server --progress --config ./build/webpack.dev.js",
+    "build": "webpack --progress --config ./build/webpack.prod.js",
     "server": "http-server dist"
   },
-  "author": "",
+  "author": "yym",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.3.4",
@@ -36,6 +36,7 @@
     "postcss-pxtorem": "^4.0.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.2.3",
     "url-loader": "^1.1.2",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3",
@@ -48,9 +49,6 @@
     "amfe-flexible": "^2.2.1",
     "antd-mobile": "^2.2.9",
     "jquery": "^3.3.1",
-    "lodash": "^4.17.11",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-router-dom": "^4.3.1"
+    "swiper": "^4.5.0"
   }
 }

@@ -1,0 +1,96 @@
+@import '~common/style/index.scss';
+* {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+
+  .report  {
+    width: 100%;
+    height: 100%;
+ 
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      background: url(./i/bg_2.png) no-repeat;
+      background-size: 100% 100%;
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0 18px;
+
+        img {
+          width: 100%;
+        }
+        &.swiper-slide-1 , &.swiper-slide-12 {
+          display: block;
+          padding: 40px 65px 0;
+          background: url(./i/bg_1.png) no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+      
+    }
+
+    .tip-down, .tip-up  {
+      display: inline-block;
+      position: absolute;
+      width: 1.4rem;
+      height: 1.4rem;
+      z-index: 9;
+      left: 50%;
+      margin-left: -.7rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    .tip-down {
+      animation: tip-down 1.5s infinite ease-in-out;
+      bottom: 0;
+    }
+
+    .tip-up {
+      display: none;
+      animation: tip-up 1.5s infinite ease-in-out;
+      top: 0;
+      line-height: 1.4rem;
+    }
+  }
+}
+@keyframes tip-down {
+  0%,30% {
+      opacity: 0;
+      transform: translate(0, -10px)
+  }
+
+  60% {
+      opacity: 1;
+      transform: translate(0, 0)
+  }
+
+  100% {
+      opacity: 0;
+      transform: translate(0, 8px)
+  }
+}
+
+@keyframes tip-up {
+  0%,30% {
+      opacity: 0;
+      transform: translate(0, 10px)
+  }
+
+  60% {
+      opacity: 1;
+      transform: translate(0, 0)
+  }
+
+  100% {
+      opacity: 0;
+      transform: translate(0, -8px)
+  }
+}

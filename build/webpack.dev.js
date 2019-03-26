@@ -8,11 +8,13 @@ const devConfig = {
   devtool: 'cheap-module-eval-source-map',
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
+    host: '0.0.0.0',
     port: 9000,
-    open: true,
+    // open: true,
     hot: true,
     // hotOnly: true,
     historyApiFallback: true,
+    stats: 'minimal',
     // 配置代理
     proxy: {
 			'/api': {
